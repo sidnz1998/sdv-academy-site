@@ -116,6 +116,54 @@
             padding: 4rem 2rem;
         }
 
+        /* Founder Section */
+        .founder {
+            background: white;
+            padding: 4rem 2rem;
+        }
+
+        .founder-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .founder-image-container {
+            text-align: center;
+        }
+
+        .founder-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #10b981;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .founder-text h3 {
+            color: #10b981;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .founder-text h4 {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        .founder-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
         /* Vision & Mission Section */
         .vision-mission {
             background: #f8f9fa;
@@ -328,6 +376,16 @@
             .hero p {
                 font-size: 1.1rem;
             }
+
+            .founder-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .founder-image {
+                width: 200px;
+                height: 200px;
+            }
         }
     </style>
 </head>
@@ -339,6 +397,7 @@
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#founder">Founder</a></li>
                 <li><a href="#programs">Programs</a></li>
                 <li><a href="#why-us">Why Us</a></li>
                 <li><a href="#mentors">Our Mentors</a></li>
@@ -352,6 +411,20 @@
         <h1>Unlock Your Child's Full Potential</h1>
         <p>Personalized home tuition that empowers students to excel academically and grow into confident, self-driven learners</p>
         <a href="#contact" class="cta-button">Get Started Today</a>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder" id="founder">
+        <div class="founder-content">
+            <div class="founder-image-container">
+                <img src="founder.jpg" alt="Founder" class="founder-image">
+            </div>
+            <div class="founder-text">
+                <h3>Founder's Message</h3>
+                <h4>Building Bridges, Unlocking Potential</h4>
+                <p>Teaching has always been my passion, and my experience in home tutoring has provided me with valuable insights into the often-overlooked gap between students and their parents. This gap can sometimes hinder a student's academic and personal growth. As tutors and educators, we have the opportunity to bridge this crucial divide, facilitating better communication and understanding between students and their parents. By doing so, we play a vital role in unlocking each student's full potential. We guide them not only in their academic pursuits but also in their journey to become the best version of themselves, fostering confidence and a love for learning that extends beyond the classroom.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Vision & Mission -->
